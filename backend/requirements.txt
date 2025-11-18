@@ -1,22 +1,24 @@
-fastapi==0.104.1
-uvicorn==0.24.0
-pandas==2.1.3
+# Core de la aplicación
+streamlit==1.28.0
+
+# Análisis de datos (VERSIONES COMPATIBLES)
+pandas==1.5.3
+numpy==1.24.3
+openpyxl==3.1.0
+
+# Visualización
+plotly==5.15.0
+
+# IA
 openai==1.3.0
-python-multipart==0.0.6
+
+# Utilidades básicas
 python-dotenv==1.0.0
 python-jose==3.3.0
 passlib==1.7.4
 bcrypt==4.0.1
-redis==5.0.1
-celery==5.3.4
-sqlalchemy==2.0.23
-alembic==1.12.1
-pydantic==2.5.0
-aiofiles==23.2.1
+pydantic==1.10.12
 chardet==5.2.0
-openpyxl==3.1.2
-xlrd==2.0.1
-plotly==5.17.0
-numpy==1.24.3
-scipy==1.11.4
-gunicorn
+
+# ELIMINADAS (causan conflictos):
+# redis, celery, sqlalchemy, alembic, aiofiles, xlrd, scipy, gunicorn
