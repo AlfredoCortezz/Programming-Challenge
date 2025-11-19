@@ -518,7 +518,7 @@ function App() {
                 <PieChart data={dataTypeDistribution} size={220} />
               </div>
               
-              {/* Gráfico */}
+              {/* Leyenda del Gráfico */}
               <div style={{flex: '1', minWidth: '250px'}}>
                 <div style={{display: 'flex', flexDirection: 'column', gap: '12px'}}>
                   {dataTypeDistribution.map((item, index) => (
@@ -654,8 +654,6 @@ function App() {
                 <span style={{fontSize: '20px'}}>🚀</span>
               </div>
               <div>
-                <p style={{color: 'white', fontWeight: '600'}}>AI Dashboard Creator</p>
-                <p style={{color: '#94a3b8', fontSize: '14px'}}>Powered by Advanced AI</p>
               </div>
             </div>
             <div style={{color: '#94a3b8', fontSize: '14px'}}>
