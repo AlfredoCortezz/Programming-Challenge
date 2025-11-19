@@ -1,99 +1,66 @@
-# Programming-Challenge
 📊 Análisis al Instante - Dashboard con IA
-🔗 Enlaces
-Repositorio: github.com/AlfredoCortezz/Programming-Challenge
-
-Demo: alfredocortezz-programming-challenge.streamlit.app
 
 🚀 Características
 Sube archivos CSV o Excel
 
 Análisis automático con IA (OpenAI)
 
-Sugerencias de visualizaciones
+Sugerencias inteligentes de visualizaciones
 
 Dashboard interactivo con Plotly
 
+Procesamiento en tiempo real
+
 🛠 Decisiones Técnicas
-
 Frontend & UI
-Streamlit: Elegido por su rápida implementación para aplicaciones de datos
-
-Plotly: Gráficos interactivos profesionales vs alternativas estáticas
-
-CSS Custom: Mejoras de UX sobre el tema por defecto de Streamlit
+Streamlit como framework principal para desarrollo rápido de aplicaciones de datos, Plotly para gráficos interactivos profesionales, y CSS personalizado para mejoras de experiencia de usuario.
 
 Backend & Procesamiento
-Python 3.8+: Ecosistema maduro de data science
-
-Pandas: Estándar industry para manipulación de datos
-
-OpenAI GPT-4: Mejor comprensión contextual vs modelos anteriores
-
-OpenPyXL: Soporte nativo para Excel sin dependencias externas
+Python 3.8+ con su ecosistema robusto para ciencia de datos, Pandas como estándar industrial para análisis de datos, OpenAI GPT-4 para análisis inteligente contextual, y OpenPyXL para soporte nativo de Excel.
 
 Arquitectura
-Monolítica: Simplicidad y velocidad de desarrollo
-
-Procesamiento Síncrono: Respuesta inmediata al usuario
-
-Separación de Capas:
-
-UI (Streamlit)
-
-Lógica de Negocio (Python)
-
-IA (OpenAI API)
-
-Despliegue
-Streamlit Cloud: Cero configuración vs otras plataformas
-
-Environment Variables: Seguridad de API keys
-
-Requirements.txt: Control preciso de versiones
-
+Arquitectura monolítica optimizada para simplicidad y velocidad, procesamiento síncrono para respuesta inmediata, y separación clara entre capas de presentación, lógica de negocio e inteligencia artificial.
 
 ⚡ Instalación Local
-Clonar y entrar en la carpeta:
+Clonar el repositorio y acceder a la carpeta backend:
 
-bash
 git clone https://github.com/AlfredoCortezz/Programming-Challenge.git
 cd Programming-Challenge/backend
-Entorno virtual y dependencias:
 
-bash
+Crear y activar entorno virtual:
+
 python -m venv venv
-source venv/bin/activate  # Windows: .venv\Scripts\activate
+.venv\Scripts\activate # Windows
+source venv/bin/activate # Mac/Linux
+
+Instalar dependencias:
+
 pip install -r requirements.txt
+
 Configurar API key de OpenAI:
 
-bash
-echo "OPENAI_API_KEY=tu_api_key" > .env
-Ejecutar:
+echo "OPENAI_API_KEY=tu_clave_api_aqui" > .env
 
-bash
+Ejecutar la aplicación:
+
 streamlit run app.py
 
-🤖 Prompt Engineering
+Acceder en el navegador: http://localhost:8501
 
-"Rol: Analista de datos senior
-Entrada: Esquema de datos (columnas, tipos, estadísticas)
-Tarea: Sugerir 3-5 visualizaciones óptimas
-Formato Salida: JSON estructurado"
+🤖 Ingeniería de Prompts
+Sistema: "Eres un analista de datos senior con expertise en visualización"
+Entrada: "Esquema de datos: columnas, tipos de datos, estadísticas descriptivas"
+Tarea: "Identificar 3-5 visualizaciones óptimas para los datos proporcionados"
+Formato: "JSON estructurado con título, tipo de gráfico, parámetros e insight"
 
-Prompt estructurado para análisis de datos
+Técnicas implementadas: contextualización específica del rol, estructura de salida estricta en JSON, validación multi-nivel, y manejo robusto de errores con fallbacks.
 
-Respuesta en JSON con sugerencias de gráficos
+🎯 Flujo de Uso
+Subir archivo CSV o Excel mediante interfaz drag-and-drop
 
-Validación y manejo de errores
+Revisar vista previa de datos y estadísticas básicas
 
-🎯 Uso
+Ejecutar análisis con IA para obtener sugerencias de visualizaciones
 
-Subir archivo
-
-Revisar vista previa y estadísticas
-
-Obtener sugerencias de IA
-
-Visualizar en dashboard
+Explorar dashboard interactivo con gráficos propuestos
 
