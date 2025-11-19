@@ -21,7 +21,10 @@ Python 3.8+ con su ecosistema robusto para ciencia de datos, Pandas como estánd
 Arquitectura
 Arquitectura monolítica optimizada para simplicidad y velocidad, procesamiento síncrono para respuesta inmediata, y separación clara entre capas de presentación, lógica de negocio e inteligencia artificial.
 
-⚡ Instalación Local
+## ⚡ Instalación Local
+
+### Backend
+
 Clonar el repositorio y acceder a la carpeta backend:
 
 git clone https://github.com/AlfredoCortezz/Programming-Challenge.git
@@ -30,8 +33,8 @@ cd Programming-Challenge/backend
 Crear y activar entorno virtual:
 
 python -m venv venv
-.venv\Scripts\activate # Windows
-source venv/bin/activate # Mac/Linux
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Mac/Linux
 
 Instalar dependencias:
 
@@ -43,9 +46,23 @@ echo "OPENAI_API_KEY=tu_clave_api_aqui" > .env
 
 Ejecutar la aplicación:
 
-streamlit run app.py
+python app.py  # o como se llame tu archivo principal
 
-Acceder en el navegador: http://localhost:8501
+### Frontend
+
+Acceder a la carpeta frontend:
+
+cd ../frontend
+
+Instalar dependencias:
+
+npm install
+
+Ejecutar la aplicación:
+
+npm start
+
+Acceder en el navegador: http://localhost:3000
 
 🤖 Ingeniería de Prompts
 Sistema: "Eres un analista de datos senior con expertise en visualización"
